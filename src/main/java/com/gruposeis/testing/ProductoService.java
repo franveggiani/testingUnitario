@@ -2,27 +2,24 @@ package com.gruposeis.testing;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.HashMap;
+import java.time.LocalDate;
+import java.util.Optional;
 
 public class ProductoService {
 
     @Autowired
     ProductoRepository productoRepository;
 
-    public ProductoService(ProductoRepository productoRepository){
-        this.productoRepository = productoRepository;
+    public ProductoService(){
+
     }
-
-
 
     public Producto crearProducto(Long id, String nombre, int stock){
-
         Producto producto = new Producto();
-        productoRepository.save(producto);
+        producto.setNombre(nombre);
+        producto.setStock(stock);
 
         return producto;
-
     }
-
 
 }
