@@ -25,6 +25,10 @@ public class ProductoService {
         return numero1 + numero2;
     }
 
+    public BandaMusical crearMejoresBandasDeLaHistoria(String nombre){
+        return new BandaMusical(nombre);
+    }
+
 
 
 }
