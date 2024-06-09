@@ -1,15 +1,11 @@
 package com.gruposeis.testing;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
-import java.util.Optional;
-
 @Service
-public class ProductoService {
+public class FrancoService {
 
-    public ProductoService(){
+    public FrancoService(){
 
     }
 
@@ -23,6 +19,10 @@ public class ProductoService {
 
     public int sumarNumeros(int numero1, int numero2){
         return numero1 + numero2;
+    }
+
+    public BandaMusical crearMejoresBandasDeLaHistoria(String nombre){
+        return new BandaMusical(nombre);
     }
 
 
