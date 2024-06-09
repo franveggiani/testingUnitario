@@ -9,14 +9,21 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class ProductoServiceTest {
     @Autowired
     private ProductoService productoService;
+
     @Test
-    public void testCrearProducto(){
+    public void testearSuma(){
 
-        Producto esperado = new Producto(1L, "Palo de escoba", 5);
+        int esperado = 4;
 
-        Producto resultado = productoService.crearProducto(1L, "Palo de escoba", 5);
+        int resultado = productoService.sumarNumeros(1,3);
 
         Assertions.assertEquals(esperado, resultado);
     }
 
+    @Test
+    public void testCrearProducto(){
+
+
+
+    }
 }
