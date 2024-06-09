@@ -39,4 +39,20 @@ public class Producto implements Serializable {
     public LocalDate getFechaHoraBaja() {
         return fechaHoraBaja;
     }
+
+    public void incrementarStock(int cantidad) {
+        if (cantidad > 0) {
+            this.stock += cantidad;
+        }
+    }
+
+    public void decrementarStock(int cantidad) {
+        if (cantidad > 0 && this.stock >= cantidad) {
+            this.stock -= cantidad;
+        }
+    }
+
+    public void marcarComoBaja() {
+        this.fechaHoraBaja = LocalDate.now();
+    }
 }
