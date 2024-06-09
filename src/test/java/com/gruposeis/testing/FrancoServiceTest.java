@@ -34,7 +34,7 @@ public class FrancoServiceTest {
     public void testCrearMejoresBandasMusicalesDeLaHistoria(){
 
         BandaMusical bandaResultado = new FrancoService().crearMejoresBandasDeLaHistoria("The Beatles");
-        BandaMusical bandaEsperada = new BandaMusical("La joaqui");
+        BandaMusical bandaEsperada = new BandaMusical("The Beatles");
 
         Assertions.assertEquals(bandaEsperada.getNombre(), bandaResultado.getNombre());
 
