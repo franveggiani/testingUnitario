@@ -25,6 +25,9 @@ jobs:
     - name: Run Checkstyle
       run: ./gradlew checkstyleMain checkstyleTest
 
+    - name: Run Tests
+      run: ./gradlew test --no-daemon
+
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
