@@ -43,5 +43,6 @@ public class Usuario {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
+        this.Habilitado = true;
     }
 }
