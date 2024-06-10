@@ -26,7 +26,7 @@ public class UsuarioService {
             throw new Exception("El usuario ya ha sido eliminado previamente");
         }
 
-        usuario.setHabilitado(true);
+        usuario.setHabilitado(false);
         return usuario;
     }
 
